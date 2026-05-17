@@ -73,7 +73,6 @@ namespace WindowsFormProjeOdevi
                 {
                     r.Id,
                     Kullanici = r.Kullanici.Ad,
-                    Rol = r.Kullanici.Rol,
                     Saha = r.Saha.Ad,
                     Tarih = r.RezervasyonTarihi
                 })
