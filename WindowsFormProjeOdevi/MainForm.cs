@@ -98,12 +98,27 @@ namespace WindowsFormProjeOdevi
                 saatText
                 );
 
-            MessageBox.Show(sonuc + "\nÜcret: " + ucret + " TL");
-            if (aktifKullanici.Rol == Rol.Ogrenci || aktifKullanici.Rol == Rol.Personel)
-            {
-                MessageBox.Show("\nÖğrenci/Personel kartınızı getirmeyi unutmayınız!");
-            }
+           
 
+            if (sonuc == "Rezervasyon oluşturuldu!")
+            {
+                if (aktifKullanici.Rol == Rol.Ogrenci ||
+                    aktifKullanici.Rol == Rol.Personel)
+                {
+                    MessageBox.Show(
+                        sonuc +
+                        "\nÖğrenci/Personel kartınızı getirmeyi unutmayınız!"
+                    );
+                }
+                else
+                {
+                    MessageBox.Show(sonuc);
+                }
+            }
+            else
+            {
+                MessageBox.Show(sonuc);
+            }
 
 
             GridDoldur();
@@ -169,6 +184,14 @@ namespace WindowsFormProjeOdevi
             }
         }
 
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            LoginForm login = new LoginForm();
+
+            login.Show();
+
+            this.Close();
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

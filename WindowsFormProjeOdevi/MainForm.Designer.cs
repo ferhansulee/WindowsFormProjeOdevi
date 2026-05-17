@@ -38,6 +38,7 @@
             this.btnSil = new System.Windows.Forms.Button();
             this.gridRezervasyonlar = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCikis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridRezervasyonlar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,9 +85,9 @@
             // 
             this.btnGuncelle.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGuncelle.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnGuncelle.Location = new System.Drawing.Point(311, 489);
+            this.btnGuncelle.Location = new System.Drawing.Point(310, 448);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(90, 44);
+            this.btnGuncelle.Size = new System.Drawing.Size(96, 43);
             this.btnGuncelle.TabIndex = 4;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
@@ -96,9 +97,9 @@
             // 
             this.btnEkle.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.OliveDrab;
-            this.btnEkle.Location = new System.Drawing.Point(311, 373);
+            this.btnEkle.Location = new System.Drawing.Point(310, 360);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(90, 39);
+            this.btnEkle.Size = new System.Drawing.Size(95, 37);
             this.btnEkle.TabIndex = 5;
             this.btnEkle.Text = "Oluştur";
             this.btnEkle.UseVisualStyleBackColor = true;
@@ -108,9 +109,9 @@
             // 
             this.btnSil.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnSil.Location = new System.Drawing.Point(310, 430);
+            this.btnSil.Location = new System.Drawing.Point(309, 403);
             this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(91, 40);
+            this.btnSil.Size = new System.Drawing.Size(96, 39);
             this.btnSil.TabIndex = 6;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
@@ -130,18 +131,30 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(320, 357);
+            this.label1.Location = new System.Drawing.Point(319, 344);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Rezervasyon";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // btnCikis
+            // 
+            this.btnCikis.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnCikis.Location = new System.Drawing.Point(294, 512);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(125, 40);
+            this.btnCikis.TabIndex = 9;
+            this.btnCikis.Text = "ÇIKIŞ";
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 669);
+            this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridRezervasyonlar);
             this.Controls.Add(this.btnSil);
@@ -171,5 +184,6 @@
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.DataGridView gridRezervasyonlar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCikis;
     }
 }
