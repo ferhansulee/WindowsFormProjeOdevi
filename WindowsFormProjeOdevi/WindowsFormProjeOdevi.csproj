@@ -118,5 +118,8 @@
   <ItemGroup>
     <None Include="Resources\tenis-kort-randevu-istanbul1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voleybol-sahasi-olcusu-1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
