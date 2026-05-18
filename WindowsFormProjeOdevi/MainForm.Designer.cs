@@ -39,7 +39,13 @@
             this.gridRezervasyonlar = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCikis = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridRezervasyonlar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblHosgeldin
@@ -57,7 +63,7 @@
             // cmbSaat
             // 
             this.cmbSaat.FormattingEnabled = true;
-            this.cmbSaat.Location = new System.Drawing.Point(275, 273);
+            this.cmbSaat.Location = new System.Drawing.Point(359, 273);
             this.cmbSaat.Name = "cmbSaat";
             this.cmbSaat.Size = new System.Drawing.Size(165, 24);
             this.cmbSaat.TabIndex = 1;
@@ -66,7 +72,7 @@
             // cmbSaha
             // 
             this.cmbSaha.FormattingEnabled = true;
-            this.cmbSaha.Location = new System.Drawing.Point(275, 186);
+            this.cmbSaha.Location = new System.Drawing.Point(359, 186);
             this.cmbSaha.Name = "cmbSaha";
             this.cmbSaha.Size = new System.Drawing.Size(165, 24);
             this.cmbSaha.TabIndex = 2;
@@ -75,7 +81,7 @@
             // 
             // dtTarih
             // 
-            this.dtTarih.Location = new System.Drawing.Point(250, 234);
+            this.dtTarih.Location = new System.Drawing.Point(340, 234);
             this.dtTarih.Name = "dtTarih";
             this.dtTarih.Size = new System.Drawing.Size(208, 22);
             this.dtTarih.TabIndex = 3;
@@ -85,7 +91,7 @@
             // 
             this.btnGuncelle.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnGuncelle.ForeColor = System.Drawing.Color.SteelBlue;
-            this.btnGuncelle.Location = new System.Drawing.Point(310, 448);
+            this.btnGuncelle.Location = new System.Drawing.Point(389, 448);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(96, 43);
             this.btnGuncelle.TabIndex = 4;
@@ -97,7 +103,7 @@
             // 
             this.btnEkle.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnEkle.ForeColor = System.Drawing.Color.OliveDrab;
-            this.btnEkle.Location = new System.Drawing.Point(310, 360);
+            this.btnEkle.Location = new System.Drawing.Point(389, 360);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(95, 37);
             this.btnEkle.TabIndex = 5;
@@ -109,7 +115,7 @@
             // 
             this.btnSil.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnSil.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnSil.Location = new System.Drawing.Point(309, 403);
+            this.btnSil.Location = new System.Drawing.Point(388, 403);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(96, 39);
             this.btnSil.TabIndex = 6;
@@ -120,18 +126,18 @@
             // gridRezervasyonlar
             // 
             this.gridRezervasyonlar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridRezervasyonlar.Location = new System.Drawing.Point(639, 159);
+            this.gridRezervasyonlar.Location = new System.Drawing.Point(621, 149);
             this.gridRezervasyonlar.Name = "gridRezervasyonlar";
             this.gridRezervasyonlar.RowHeadersWidth = 51;
             this.gridRezervasyonlar.RowTemplate.Height = 24;
-            this.gridRezervasyonlar.Size = new System.Drawing.Size(406, 403);
+            this.gridRezervasyonlar.Size = new System.Drawing.Size(465, 403);
             this.gridRezervasyonlar.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(319, 344);
+            this.label1.Location = new System.Drawing.Point(400, 344);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 8;
@@ -141,7 +147,7 @@
             // btnCikis
             // 
             this.btnCikis.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnCikis.Location = new System.Drawing.Point(294, 512);
+            this.btnCikis.Location = new System.Drawing.Point(377, 512);
             this.btnCikis.Name = "btnCikis";
             this.btnCikis.Size = new System.Drawing.Size(125, 40);
             this.btnCikis.TabIndex = 9;
@@ -149,11 +155,42 @@
             this.btnCikis.UseVisualStyleBackColor = true;
             this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::WindowsFormProjeOdevi.Properties.Resources.tenis_kort_randevu_istanbul1;
+            this.pictureBox3.Location = new System.Drawing.Point(-9, 420);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(318, 176);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormProjeOdevi.Properties.Resources.images__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(26, 234);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(270, 163);
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormProjeOdevi.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 43);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(270, 167);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1116, 669);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridRezervasyonlar);
@@ -168,6 +205,9 @@
             this.Name = "MainForm";
             this.Text = "Rezervasyon Ekranı";
             ((System.ComponentModel.ISupportInitialize)(this.gridRezervasyonlar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +225,8 @@
         private System.Windows.Forms.DataGridView gridRezervasyonlar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCikis;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

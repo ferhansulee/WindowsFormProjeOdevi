@@ -70,9 +70,9 @@
             this.lblBaslik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblBaslik.Location = new System.Drawing.Point(270, 90);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(679, 30);
+            this.lblBaslik.Size = new System.Drawing.Size(670, 30);
             this.lblBaslik.TabIndex = 3;
-            this.lblBaslik.Text = "İSTANBUL MEDENİYET ÜNİVERSİTESİ SPOR SALONU REZERVASYON SİSTEMİ";
+            this.lblBaslik.Text = "İSTANBUL MEDENİYET ÜNİVERSİTESİ SPOR SAHASI REZERVASYON SİSTEMİ";
             // 
             // txtEmail
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.lblEmail);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
-            this.Text = "İstanbul Medeniyet Üniversitesi Spor Salonu";
+            this.Text = "İstanbul Medeniyet Üniversitesi Spor Sahası";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.Leave += new System.EventHandler(this.txtEmail_Leave);
             this.ResumeLayout(false);
